@@ -1,16 +1,24 @@
 {
   "name": "cl",
+  "type": "commonjs",
   "version": "1.0.0",
-  "main": "script.js",
+  "main": "script.cjs",
+  "bin": "script.cjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node script.cjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "readline": "^1.3.0"
+    "node-fetch": "^2.6.1"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
   }
 }
